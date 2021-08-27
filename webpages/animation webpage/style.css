@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Tangerine', cursive;
+}
+body{
+    background: rgb(124, 3, 3);  
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    background: url(6.jpg);
+    background-size: cover;
+}
+
+section h2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 90px;
+    
+    color: #fff;
+    font-weight: 500;
+}
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner .blocks{
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background: rgb(255, 255, 255);
+    animation: animate 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes animate
+ {
+    0%
+     {
+        transform: translateZ(2000px);
+        background: url(2.jpeg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
+    100%
+     {
+        transform:translateZ(0px);
+        background: url(2.jpeg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        border: 1px solid rgba(0,0,0,0.1);
+       
+    }
+}
+section.active .banner .blocks{
+    animation: animateTwo 1s ease-in-out forwards;
+    background: url(2.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px solid rgba(0,0,0,0.1);
+
+}
+@keyframes animateTwo{
+    0%
+    {
+       transform: translateZ(0px);
+       background: url(2.jpeg);
+       background-position: center;
+       background-attachment: fixed;
+       background-size: cover;
+   }
+   100%
+    {
+       transform:translateZ(2000px);
+       background: url(2.jpeg);
+       background-position: center;
+       background-attachment: fixed;
+       background-size: cover;
+       border: 1px solid rgba(0,0,0,0.1);
+   }
+}

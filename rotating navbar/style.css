@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Redressed&display=swap');
+* {
+    box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #333;
+    color: #222;
+
+}
+
+.container {
+    background: linear-gradient(to left, #ffffff 0%, #99ffcc 100%);
+  transform-origin: top left;
+  transition: transform 0.9s linear;
+  width: 100vw;
+  min-height: 100vh;
+  
+}
+
+.container.show-nav {
+  transform: rotate(-25deg);
+}
+
+
+.circle-container {
+  position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+
+.circle {
+    background: #222;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.9s linear;
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 29px;
+    color: #fff;
+    cursor: pointer;
+}
+.circle button:hover{
+    color: rgb(143, 135, 135);
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 55px;
+    text-shadow: 2px 2px 5px teal;
+    font-family: 'Berkshire Swash', cursive;
+    top: -48px;
+    position:relative;
+}
+
+.content h3{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(2, 92, 122);
+  font-family: 'Redressed', cursive;
+    font-size: 25px;
+    top: -65px;
+    position:relative;
+}
+
+
+#butterfly{
+    width: 450px;
+    height: 343px;
+    display: block;
+    margin-left: 60%;
+    
+    margin-right: 40%;
+    
+  
+
+}
+#color{
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 85px;
+    left: 25px;
+    
+}
+
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+    
+}
+
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    cursor: pointer;
+}
+
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    text-decoration: overline wheat 3px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(182, 174, 174);
+}
+
+
+nav ul li + li {
+    margin-left: 10px;
+    transform: translateX(-150%);
+}
+
+
+nav ul li + li + li {
+    margin-left: 30px;
+     transform: translateX(-200%);
+}
+
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+} 

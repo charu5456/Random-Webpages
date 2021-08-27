@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.smily{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-shadow: 5px 10px #888888;
+    margin: 80px;
+}
+.eyes:before,
+.eyes:after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    transition: 0.5s;
+}
+.eyes:before{
+    left: 25%;
+}
+.eyes:after{
+    right: 25%;
+}
+.smily:hover .eyes:before, .smily:hover .eyes:after{
+    width: 30px;
+    height: 45px;
+}
+.lips{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid red;
+    border-radius: 0;
+    transition: 0.5s;
+}
+.smily:hover .lips{
+    border-radius: 50%;
+    width: 130px;
+}
+.face{
+    background-color: yellow;
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+
+    margin: 60px;
+    border: 3px solid black;
+    float:left;
+    box-shadow: 5px 10px #888888;
+	
+}
+.eye{
+    background-color: black;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    margin: 60px;
+}
+
+.smiles{
+    height:20px;
+    width:75px;
+    background-color: red;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin-left:65px;
+    
+    position:fixed;
+}
+.face:hover .smiles{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 15px;
+    border-radius: 7px 7px 100px 100px;
+    top: 200px;
+    
+}
+.flat-eyes{
+    background-color: black;
+    height:10px;
+    width:25px;
+    margin: 60px;
+}
+.smile{
+    height:20px;
+    width:75px;
+    background-color: red;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin-left:65px;
+
+    position:fixed;
+}
+
+.face:hover .smile{
+    border-radius: 50%;
+    width: 0px;
+}
+
+
+
+
+.fac{
+    background-color: yellow;
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    
+    margin: 60px;
+    border: 3px solid black;
+    float:left;
+    box-shadow: 5px 10px #888888;
+	
+}
+
+.es{
+    background-color: black;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    margin: 60px;
+}
+
+.ile{
+    height:20px;
+    width:65px;
+    background-color: red;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin-left:65px;
+    
+    position:fixed;
+}
+
+.fac:hover .ile{
+    border-radius: 50%;
+    width: 75px;
+}

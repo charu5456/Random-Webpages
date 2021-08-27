@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+    margin-left: 50px;
+    color: aliceblue;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(0, 77, 122), rgb(214, 255, 255));
+    text-shadow: 2px 2px #004141;
+}
+.navbar{
+    width: 90%;
+    height: 20%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: #fbfcfd;
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Lateef', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #040a0e;
+}
+.content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.content h1{
+    font-size: 60px;
+    margin: 50px 0 10px;
+    line-height: 75px;
+    text-shadow: 2px 2px #000000;
+    font-family: 'Nothing You Could Do', cursive;
+}
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#013035, rgb(4, 134, 173));
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.social-links img, .useful-links img{
+    width: 29px;
+    margin: 19px 13px;
+    cursor: pointer;
+}
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+}
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+       
+        opacity: 1;
+    }
+    70% {
+       
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 45px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 50px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 35px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 6.1s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 5.5s;
+    width: 30px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 65px;
+}

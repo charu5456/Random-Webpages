@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My World</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Nanum+Myeongjo&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merienda', cursive;
+           
+        }
+        body{
+            min-height: 100vh;
+            background: url(3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navigation{
+            position: fixed;
+            width: 60px;
+            height: 100%;
+            background: rgb(10, 80, 107);
+            transition: 0.5s;
+            overflow: hidden;
+        }
+        .navigation:hover,
+        .navigation.active{
+            width: 300px;
+        }
+        
+        .navigation ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+           
+        }
+        .navigation ul li{
+            position: relative;
+            width: 100%;
+            list-style: none;
+        }
+        .navigation ul li:hover{
+            background: rgb(15, 69, 90);
+        }
+        .navigation ul li a{
+            position: relative;
+            display: block;
+            width: 100%;
+            display: flex;
+            text-decoration: none;
+            color: white;
+        }
+        .navigation ul li a .icon{
+            position: relative;
+            display: block;
+            min-width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        .navigation ul li a .icon.fa{
+            font-size: 24px;
+        }
+        .navigation ul li a .title{
+            position: relative;
+            display: block;
+            padding: 0 10px;
+            height: 60px;
+            line-height: 60px;
+            text-align: start;
+            white-space: nowrap;
+        }
+        .toggle{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: rgb(10, 80, 107);
+            cursor: pointer;
+        }
+        .toggle.active{
+            background: rgb(15, 69, 90);
+        }
+        .toggle:before{
+            content: '\f0c9';
+            font-family: FontAwesome;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 60px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+        .toggle.active:before{
+            content: '\f00d';
+        }
+        .bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+   
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -0px;
+   
+}
+@keyframes bubble{
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+       
+        opacity: 1;
+    }
+    70% {
+       
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 45px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 50px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 35px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 6.1s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 5.5s;
+    width: 30px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 65px;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                    <span class="title">User</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-tasks" aria-hidden="true"></i></span>
+                    <span class="title">Services</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="bubbles">
+        <img src="b.png" alt="">
+        <img src="b.png" alt="">
+        <img src="b.png" alt="">
+        <img src="b.png" alt="">
+        <img src="b.png" alt="">
+        <img src="b.png" alt="">
+        <img src="b.png" alt="">
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+    function toggleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        navigation.classList.toggle('active');
+        toggle.classList.toggle('active');
+    }
+
+    </script>
+</body>
+</html>

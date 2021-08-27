@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 15px;
+    
+    background-image: url(imgs/5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: underline;
+
+    text-decoration-color: #336699;
+    
+}
+h1 span{
+    background-image: none;
+    color: #d66c02;
+    
+}
+h1 span1{
+    background-image: none;
+    color: #138808;
+}
+.container {
+      display: flex;
+      justify-content: center;
+      margin-top: 3px;
+}
+.strip {
+    width: 505px;
+    height: 80px;
+}
+#saffron {
+    background: #FF9933;
+}
+#white {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#green {
+    background: #138808;
+}
+.chakra {
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+.msg{
+    font-size: 30px;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px #330000;
+}
+.msg span{
+    color:rgb(2, 1, 0);
+    text-shadow: 1px 1px 3px red;
+}

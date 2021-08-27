@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    background: url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+p{
+    color: rgb(5, 0, 0);
+    font-size: 22px;
+    padding: 20px;
+    line-height: 35px;
+    font-family: 'Handlee', cursive;
+    font-weight: 800;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 30px;
+}
+::-webkit-scrollbar-track{
+    border: 3px solid #be5a2b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.884);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #5e0101, #ee4629);
+    border-radius: 30px;
+}
+.content{
+    background: url(3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
